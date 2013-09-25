@@ -20,7 +20,7 @@ public class Money {
     public boolean equals(Object anObject) {
         if (anObject instanceof Money) {
             Money money = (Money) anObject;
-            return  money.getClass().equals(getCurrency())
+            return money.getCurrency().equals(getCurrency())
                     && getAmount() == money.getAmount();
         }
         return false;
